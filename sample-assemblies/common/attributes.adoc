@@ -1,0 +1,20 @@
+// AsciiDoc settings
+:data-uri!:
+:doctype: book
+:experimental:
+:idprefix:
+:imagesdir: images
+:numbered:
+:sectanchors!:
+:sectnums:
+:sectlinks:
+:source-highlighter: highlightjs
+:toc: left
+:linkattrs:
+:toclevels: 3
+
+// Name placeholders
+:ProductLongName:  Red Hat build of Quarkus
+:ProductName: Quarkus
+:ContextProduct: quarkus
+:ProductVersion: 1.3
