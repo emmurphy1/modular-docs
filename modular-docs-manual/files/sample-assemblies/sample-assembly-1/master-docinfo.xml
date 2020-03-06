@@ -1,0 +1,8 @@
+<productname>Sample Assembly</productname>
+<productnumber>1</productnumber>
+<subtitle>This is a sample assembly.
+</subtitle>A test assembly
+<abstract>
+	<para>This is a sample assembly.</para>
+</abstract>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

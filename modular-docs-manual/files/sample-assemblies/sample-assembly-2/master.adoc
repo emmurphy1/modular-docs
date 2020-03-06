@@ -2,26 +2,29 @@
 ifdef::context[:parent-context: {context}]
 
 
-[id="sample-assembly-1"]
+[id="sample-assembly-2"]
 
-= Sample assembly 1
+= Sample assembly 2
 
-:context: sample-assembly-1
+:context: sample-assembly-2
 
-This paragraph is the assembly introduction. It explains what the user will accomplish by working through the modules in the assembly and sets the context for the user story the assembly is based on. Can include more than one paragraph. Consider using the information from the user story.
+This paragraph is the assembly introduction. It explains what the user will accomplish by working through the modules in the assembly and sets the context for the user story the assembly is based on.
+
+Can include more than one paragraph. Consider using the information from the user story.
 
 .Prerequisites
 
 * A bulleted list of conditions that must be satisfied before the user starts following this assembly.
 * You can also link to other modules or assemblies the user must follow before starting this assembly.
 * Delete the section title and bullets if the assembly has no prerequisites.
-.
+
+
 
 include::modules/con-concept-module.adoc[leveloffset=+1]
 
-include::modules/con-procedure-module.adoc[leveloffset=+1]
+include::modules/proc-procedure-module.adoc[leveloffset=+1]
 
-include::modules/con-reference-module.adoc[leveloffset=+1]
+include::modules/ref-reference-module.adoc[leveloffset=+1]
 
 
 == Additional resources (or Next steps)
