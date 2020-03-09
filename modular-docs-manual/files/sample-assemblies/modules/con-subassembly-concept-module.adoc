@@ -1,18 +1,19 @@
 
-[id="con-concept-module_{context}"]
+[id="con-subassembly-concept-module_{context}"]
 
-= Concept module
+= Subassembly concept module
 
 
 Include a short introduction that explains what this module is about.
 
 
 ifeval::["{context}" == "sample-assembly-1"]
-This paragraph is about {ProductName} {ProductVer} and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-1`) matches the context in the ifeval statement.
+This paragraph is about sample-assembly-1 and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-1`) matches the context in the ifeval statement.
 endif::[]
 
 ifeval::["{context}" == "sample-assembly-2"]
-This paragraph is about {ProductName} 2 and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-2`) matches the context in the ifeval statement.
+.Conditional context
+This paragraph is about sample-assembly-2 and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-2`) matches the context in the ifeval statement.
 endif::[]
 
 The contents of a concept module give the user descriptions and explanations needed to understand and use a product.

@@ -1,6 +1,7 @@
-inking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
 
-= Reference material
+[id="ref-reference-module_{context}"]
+
+= Reference module
 
 A short introductory paragraph is required for the reference module.
 It will provide an overview of the module.

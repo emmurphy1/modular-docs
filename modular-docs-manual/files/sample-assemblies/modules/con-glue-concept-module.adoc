@@ -1,10 +1,10 @@
 
-[id="con-concept-module_{context}"]
+[id="con-glue-concept-module_{context}"]
 
 = Concept module
 
 
-Include a short introduction that explains what this module is about.
+A short introductory paragraph is required for the concept module. It will provide an overview of the module.
 
 
 ifeval::["{context}" == "sample-assembly-1"]
@@ -12,7 +12,7 @@ This paragraph is about {ProductName} {ProductVer} and should be visible only in
 endif::[]
 
 ifeval::["{context}" == "sample-assembly-2"]
-This paragraph is about {ProductName} 2 and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-2`) matches the context in the ifeval statement.
+This paragraph is about {ProductName} {ProductVer} and should be visible only in that story. The `context:` definition in the assembly (`sample-assembly-2`) matches the context in the ifeval statement.
 endif::[]
 
 The contents of a concept module give the user descriptions and explanations needed to understand and use a product.

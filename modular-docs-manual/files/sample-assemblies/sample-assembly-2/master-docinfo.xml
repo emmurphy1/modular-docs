@@ -1,8 +1,8 @@
-<productname>{PRODUCTLONGNAME}</productname>
-<productnumber>{PRODUCTVERSION}</productnumber>
+<productname>{ProductName}</productname>
+<productnumber>1</productnumber>
 <subtitle>
 </subtitle>
 <abstract>
-	<para>This guide describes how to create an application with the {PRODUCTLONGNAME}.</para>
+	<para>This document shows how to use module files in assemblies.</para>
 </abstract>
 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

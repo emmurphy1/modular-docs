@@ -14,9 +14,5 @@
 :toclevels: 3
 
 // Name placeholders
-:ProductLongName: Red Hat build of Quarkus
-:ProductName: Quarkus
-:ContextProduct: quarkus
-:ProductVersion: 1.3
-:MavenVersion: 5.3
-:JDKVersion: 11
+:ProductName: Sample Assembly
+:ProductVer: 1

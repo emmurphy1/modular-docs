@@ -1,11 +1,10 @@
 
-[id="proc-procedure-module_{context}"]
+[id="proc-subassembly-procedure-module_{context}"]
 
-= Procedure module
+= Subassembly procedure module
 
 
 Include a short introduction that explains what this module is and explain why the user might be interested in performing these steps.
-
 
 .Prerequisites
 

@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE book [
 <!ENTITY % sgml.features "IGNORE">
 <!ENTITY % xml.features "INCLUDE">
 <!ENTITY % DOCBOOK_ENTS PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/dbcentx.mod">
 %DOCBOOK_ENTS;
 ]>
-<?asciidoc-toc?>
-<?asciidoc-numbered?>
-<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?asciidoc-toc maxdepth="3"?><?asciidoc-numbered?><book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
 <info>
-<title>Sample assembly 1</title>
-<date>2020-03-06</date>
+<title>Sample Assembly 1</title><subtitle>
+</subtitle>
+
+<date>2020-03-09</date>
+<productname>Sample Assembly</productname>
+<productnumber>1</productnumber>
+<abstract>
+	<para>This document shows how to use module files in assemblies.</para>
+</abstract>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Legal_Notice.xml"/>
 </info>
-<part xml:id="sample-assembly-1">
-<title>Sample assembly 1</title>
-<partintro>
+<preface>
+<title>Preface</title>
 <simpara>This paragraph is the assembly introduction. It explains what the user will accomplish by working through the modules in the assembly and sets the context for the user story the assembly is based on. Can include more than one paragraph. Consider using the information from the user story.</simpara>
 <itemizedlist>
 <title>Prerequisites</title>
@@ -28,12 +33,11 @@
 <simpara>Delete the section title and bullets if the assembly has no prerequisites.</simpara>
 </listitem>
 </itemizedlist>
-</partintro>
+</preface>
 <chapter xml:id="con-concept-module_sample-assembly-1">
 <title>Concept module</title>
-<simpara>A short introductory paragraph is required for the concept module.
-It will provide an overview of the module.</simpara>
-<simpara>This paragraph is about sample-assembly-1 and should be visible only in that story. The <literal>context:</literal> definition in the assembly (<literal>sample-assembly-1</literal>) matches the context in the ifeval statement.</simpara>
+<simpara>Include a short introduction that explains what this module is about.</simpara>
+<simpara>This paragraph is about Sample Assembly 1 and should be visible only in that story. The <literal>context:</literal> definition in the assembly (<literal>sample-assembly-1</literal>) matches the context in the ifeval statement.</simpara>
 <simpara>The contents of a concept module give the user descriptions and explanations needed to understand and use a product.</simpara>
 <itemizedlist>
 <listitem>
@@ -47,7 +51,7 @@ It will provide an overview of the module.</simpara>
 </listitem>
 </itemizedlist>
 <itemizedlist>
-<title>Additional resources</title>
+<title>Additional resources (this is part of the concept module)</title>
 <listitem>
 <simpara>A bulleted list of links to other material closely related to the contents of the concept module.</simpara>
 </listitem>
@@ -61,10 +65,11 @@ It will provide an overview of the module.</simpara>
 <simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
 </listitem>
 </itemizedlist>
-</chapter>
-<chapter xml:id="doing-one-procedure_sample-assembly-1">
-<title>Doing one procedure</title>
-<simpara>This paragraph is the procedure module introduction: a short description of the procedure.</simpara>
+<simpara>This is glue text that belongs to the preceding concept module.</simpara>
+<simpara>This is glue text that belongs to the following procedure module.</simpara>
+<section xml:id="proc-procedure-module_sample-assembly-1">
+<title>Procedure module</title>
+<simpara>Include a short introduction that explains what this module is and explain why the user might be interested in performing these steps.</simpara>
 <itemizedlist>
 <title>Prerequisites</title>
 <listitem>
@@ -90,7 +95,7 @@ It will provide an overview of the module.</simpara>
 </listitem>
 </orderedlist>
 <itemizedlist>
-<title>Additional resources</title>
+<title>Additional resources (this is part of the procedure module)</title>
 <listitem>
 <simpara>A bulleted list of links to other material closely related to the contents of the procedure module.</simpara>
 </listitem>
@@ -104,10 +109,176 @@ It will provide an overview of the module.</simpara>
 <simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
 </listitem>
 </itemizedlist>
-<simpara>inking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.</simpara>
+<simpara>This is glue text that belongs to the preceding procedure module.</simpara>
+</section>
 </chapter>
-<chapter xml:id="_reference_material">
-<title>Reference material</title>
+<chapter xml:id="glue_text_chapter_heading_and_introduction" remap="_glue_text_chapter_heading_and_introduction">
+<title>Glue text chapter heading and introduction</title>
+<simpara>This section is glue text. It is used because the topic is short and will not be reused. It is used to group to related modules.</simpara>
+<section xml:id="con-glue-concept-module_sample-assembly-1">
+<title>Concept module</title>
+<simpara>A short introductory paragraph is required for the concept module. It will provide an overview of the module.</simpara>
+<simpara>This paragraph is about Sample Assembly 1 and should be visible only in that story. The <literal>context:</literal> definition in the assembly (<literal>sample-assembly-1</literal>) matches the context in the ifeval statement.</simpara>
+<simpara>The contents of a concept module give the user descriptions and explanations needed to understand and use a product.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Look at nouns and noun phrases in related procedure modules and assemblies to find the concepts to explain to users.</simpara>
+</listitem>
+<listitem>
+<simpara>Explain only things that are visible to users. Even if a concept is interesting, it probably does not require explanation if it is not visible to users.</simpara>
+</listitem>
+<listitem>
+<simpara>Do not include any instructions to perform an action, such as executing a command. Action items belong in procedure modules.</simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Additional resources (this is part of the concept module)</title>
+<listitem>
+<simpara>A bulleted list of links to other material closely related to the contents of the concept module.</simpara>
+</listitem>
+<listitem>
+<simpara>This link uses the Asciidoc xref syntax: xref:proc-procedure-module_sample-assembly-1.</simpara>
+</listitem>
+<listitem>
+<simpara>For more details on writing concept modules, see the <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>This is glue text that belongs to the following procedure module.</simpara>
+</section>
+<section xml:id="proc-glue-procedure-module_sample-assembly-1">
+<title>Procedure module</title>
+<simpara>A short introductory paragraph is required for the concept module. It will provide an overview of the module.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>A bulleted list of conditions that must be satisfied before the user starts following this assembly.</simpara>
+</listitem>
+<listitem>
+<simpara>You can also link to other modules or assemblies the user must follow before starting this assembly.</simpara>
+</listitem>
+<listitem>
+<simpara>Delete the section title and bullets if the assembly has no prerequisites.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Start each step with an active verb.</simpara>
+</listitem>
+<listitem>
+<simpara>Include one command or action per step.</simpara>
+</listitem>
+<listitem>
+<simpara>Use an unnumbered bullet (*) if the procedure includes only one step.</simpara>
+</listitem>
+</orderedlist>
+<itemizedlist>
+<title>Additional resources (this is part of the procedure module)</title>
+<listitem>
+<simpara>A bulleted list of links to other material closely related to the contents of the procedure module.</simpara>
+</listitem>
+<listitem>
+<simpara>Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.</simpara>
+</listitem>
+<listitem>
+<simpara>For more details on writing procedure modules, see the <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>This is glue text that belongs to the preceding procedure module.</simpara>
+</section>
+</chapter>
+<chapter xml:id="subassembly-1">
+<title>Subassembly 1</title>
+<simpara>This is a subassembly. You can use subassemblies to group together related topics, for exmaple a chapter. It is different from an assembly (master file) which includes meta-data required to build the story. This text is part of the subassembly file.</simpara>
+<section xml:id="con-subassembly-concept-module_sample-assembly-1">
+<title>Subassembly concept module</title>
+<simpara>Include a short introduction that explains what this module is about.</simpara>
+<simpara>This paragraph is about sample-assembly-1 and should be visible only in that story. The <literal>context:</literal> definition in the assembly (<literal>sample-assembly-1</literal>) matches the context in the ifeval statement.</simpara>
+<simpara>The contents of a concept module give the user descriptions and explanations needed to understand and use a product.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Look at nouns and noun phrases in related procedure modules and assemblies to find the concepts to explain to users.</simpara>
+</listitem>
+<listitem>
+<simpara>Explain only things that are visible to users. Even if a concept is interesting, it probably does not require explanation if it is not visible to users.</simpara>
+</listitem>
+<listitem>
+<simpara>Do not include any instructions to perform an action, such as executing a command. Action items belong in procedure modules.</simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Additional resources (this is part of the concept module)</title>
+<listitem>
+<simpara>A bulleted list of links to other material closely related to the contents of the concept module.</simpara>
+</listitem>
+<listitem>
+<simpara>This link uses the Asciidoc xref syntax: xref:proc-procedure-module_sample-assembly-1.</simpara>
+</listitem>
+<listitem>
+<simpara>For more details on writing concept modules, see the <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>This is glue text that belongs to the preceding concept module.</simpara>
+<simpara>This is glue text that belongs to the following procedure module.</simpara>
+</section>
+<section xml:id="proc-subassembly-procedure-module_sample-assembly-1">
+<title>Subassembly procedure module</title>
+<simpara>Include a short introduction that explains what this module is and explain why the user might be interested in performing these steps.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>A bulleted list of conditions that must be satisfied before the user starts following this assembly.</simpara>
+</listitem>
+<listitem>
+<simpara>You can also link to other modules or assemblies the user must follow before starting this assembly.</simpara>
+</listitem>
+<listitem>
+<simpara>Delete the section title and bullets if the assembly has no prerequisites.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Start each step with an active verb.</simpara>
+</listitem>
+<listitem>
+<simpara>Include one command or action per step.</simpara>
+</listitem>
+<listitem>
+<simpara>Use an unnumbered bullet (*) if the procedure includes only one step.</simpara>
+</listitem>
+</orderedlist>
+<itemizedlist>
+<title>Additional resources (this is part of the procedure module)</title>
+<listitem>
+<simpara>A bulleted list of links to other material closely related to the contents of the procedure module.</simpara>
+</listitem>
+<listitem>
+<simpara>Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.</simpara>
+</listitem>
+<listitem>
+<simpara>For more details on writing procedure modules, see the <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>This is glue text that belongs to the preceding procedure module.</simpara>
+<simpara>This is glue text that belongs to the following reference module.</simpara>
+<simpara>This is glue text that belongs to the following reference module.</simpara>
+</section>
+</chapter>
+<appendix xml:id="ref-reference-module_sample-assembly-1">
+<title>Reference module</title>
 <simpara>A short introductory paragraph is required for the reference module.
 It will provide an overview of the module.</simpara>
 <simpara>A reference module provide data that users might want to look up, but do not need to remember.
@@ -142,9 +313,9 @@ For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:hr
 <table frame="all" rowsep="1" colsep="1">
 <title>Table</title>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="33.3333*"/>
-<colspec colname="col_2" colwidth="33.3333*"/>
-<colspec colname="col_3" colwidth="33.3334*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <thead>
 <row>
 <entry align="left" valign="top">Column 1</entry>
@@ -166,9 +337,10 @@ For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:hr
 </tbody>
 </tgroup>
 </table>
-</chapter>
-<chapter xml:id="_additional_resources_or_next_steps">
+</appendix>
+<appendix xml:id="additional_resources_or_next_steps" remap="_additional_resources_or_next_steps">
 <title>Additional resources (or Next steps)</title>
+<simpara>This is glue test in the assembly file.</simpara>
 <itemizedlist>
 <listitem>
 <simpara>A bulleted list of links to other material closely related to the contents of the assembly, including xref links to other assemblies in your collection.</simpara>
@@ -180,6 +352,5 @@ For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:hr
 <simpara>Use a consistent system for file names, IDs, and titles. For tips, see <emphasis>Anchor Names and File Names</emphasis> in <link xlink:href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</link>.</simpara>
 </listitem>
 </itemizedlist>
-</chapter>
-</part>
+</appendix>
 </book>
