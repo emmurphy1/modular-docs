@@ -1,0 +1,69 @@
+
+//ifdef::context[:parent-context: {context}]
+
+
+
+[id="sample-assembly-2"]
+
+include::common/attributes.adoc[]
+
+= {ProductName} 2
+
+:doctype: book
+:imagesdir: _images
+:context: sample-assembly-2
+
+
+This paragraph is the assembly introduction. It explains what the user will accomplish by working through the modules in the assembly and sets the context for the user story the assembly is based on. Can include more than one paragraph. Consider using the information from the user story.
+
+.Prerequisites
+
+* A bulleted list of conditions that must be satisfied before the user starts following this assembly.
+* You can also link to other modules or assemblies the user must follow before starting this assembly.
+* Delete the section title and bullets if the assembly has no prerequisites.
+
+
+
+include::modules/con-concept-module.adoc[leveloffset=+1]
+
+This is glue text that belongs to the preceding concept module.
+
+This is glue text that belongs to the following procedure module.
+
+include::modules/proc-procedure-module.adoc[leveloffset=+2]
+
+This is glue text that belongs to the preceding procedure module.
+
+
+== Glue text chapter heading and introduction
+This section is glue text. It is used because the topic is short and will not be reused. It is used to group to related modules.
+
+include::modules/con-glue-concept-module.adoc[leveloffset=+2]
+
+This is glue text that belongs to the following procedure module.
+
+include::modules/proc-glue-procedure-module.adoc[leveloffset=+2]
+
+This is glue text that belongs to the preceding procedure module.
+
+
+include::modules/subassembly-1.adoc[leveloffset=+1]
+
+
+This is glue text that belongs to the following reference module.
+
+[appendix]
+include::modules/ref-reference-module.adoc[leveloffset=+1]
+
+
+[appendix]
+== Additional resources (or Next steps)
+This is glue test in the assembly file.
+
+* A bulleted list of links to other material closely related to the contents of the assembly, including xref links to other assemblies in your collection.
+* For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+
+
+//ifdef::parent-context[:context: {parent-context}]
+//ifndef::parent-context[:!context:]
