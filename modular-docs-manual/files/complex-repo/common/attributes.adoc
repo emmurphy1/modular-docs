@@ -1,0 +1,10 @@
+// AsciiDoc settings
+:doctype: book
+:imagesdir: images
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+
+// Name placeholders
+:ProductName: Sample Assembly
+:ProductVer: 1

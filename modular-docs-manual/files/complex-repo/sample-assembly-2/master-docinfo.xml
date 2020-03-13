@@ -1,0 +1,8 @@
+<productname>{ProductName}</productname>
+<productnumber>2</productnumber>
+<subtitle>
+</subtitle>
+<abstract>
+	<para>This document shows how to use module files in assemblies.</para>
+</abstract>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
